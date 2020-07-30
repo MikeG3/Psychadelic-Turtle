@@ -4,12 +4,10 @@ window.addEventListener('keydown', move);
 //GLOBAL VARIABLES
 const backgroundColor = "#00CDEF";
 const windowX = window.innerWidth;
-const windowY =window.innerHeight;
+const windowY = window.innerHeight;
 //booleans
 //Rectangles
-const r1 = document.querySelector("#rect1");
-const turtle = document.getElementsByClassName("turtle");
-//const svg = document.getElementsByTagName("svg");
+const r1 = document.getElementById("rect1");
 
 //integers
 var i = 0, j = 0, k = 0;
@@ -22,7 +20,7 @@ var frame = 0, interval = 150;
 var date = new Date();
 //DATA
 
-var colors = ["#BEFFBE", "#66FF99","#33FF88","#33FF55", "#00CC44","#009933", "#006622"];
+var colors = ["#FFFFFF", "#BEFFBE", "#66FF99","#33FF88","#33FF55", "#00CD50","#00C050","#00C038","#009933", "#006622", "#002200"];
 
 //FUNCTION DEFINITIONS
 function move(key) {
@@ -46,16 +44,52 @@ function startScreen(){
 
 function animate() {
   frame++;
-  if (frame > 100){
-    //r1.setAttribute.colors;
-    let t = document.querySelectorAll;
-    t.style.fill = "#454545";
-  }//close if frame is over 100 update color
-  
-  if (frame == 200){
+
+  if (frame == 10 ){
+    document.getElementById("turtleDiv").innerHTML = getTurtle() ;
+  }//close if frame is equal to
+  if (frame == 20 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[0] ) ;
+  }//close if frame is equal to
+  if (frame == 30 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[1] ) ;
+  }//close if frame is equal to
+  if (frame == 40 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[2] ) ;
+  }//close if frame is equal to
+  if (frame == 50 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[3] ) ;
+  }//close if frame is equal to
+  if (frame == 60 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[4] ) ;
+  }//close if frame is equal to
+  if (frame == 70 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[5] ) ;
+  }//close if frame is equal to
+  if (frame == 80 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[6] ) ;
+  }//close if frame is equal to
+  if (frame == 90 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[7] ) ;
+  }//close if frame is equal to
+  if (frame == 100 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[8] ) ;
+  }//close if frame is equal to
+  if (frame == 110 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[9] ) ;
+  }//close if frame is equal to
+  if (frame == 120 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[10] ) ;
+  }//close if frame is equal to
+  if (frame == 130 ){
+    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[11] ) ;
+  }//close if frame is equal to
+  //RESET
+  if (frame == 140){
     frame = 0;
   }//close reset frame counter if 200
-  console.log(frame);
+  
+  console.log("frame = " + frame);
   requestAnimationFrame(animate);
     
 } //close function play tic tac toe
