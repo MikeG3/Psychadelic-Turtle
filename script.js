@@ -47,47 +47,50 @@ function animate() {
   if (frame%9==0){
     animateTitle();
   }//close animate title if mod 10
-    if (frame == 10 ){
-    document.getElementById("turtleDiv").innerHTML = getTurtle() ;
-  }//close if frame is equal to
-  if (frame == 20 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[0] ) ;
-  }//close if frame is equal to
-  if (frame == 30 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[1] ) ;
-  }//close if frame is equal to
-  if (frame == 40 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[2] ) ;
-  }//close if frame is equal to
-  if (frame == 50 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[3] ) ;
-  }//close if frame is equal to
-  if (frame == 60 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[4] ) ;
-  }//close if frame is equal to
-  if (frame == 70 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[5] ) ;
-  }//close if frame is equal to
-  if (frame == 80 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[6] ) ;
-  }//close if frame is equal to
-  if (frame == 90 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[7] ) ;
-  }//close if frame is equal to
-  if (frame == 100 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[8] ) ;
-  }//close if frame is equal to
-  if (frame == 110 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[9] ) ;
-  }//close if frame is equal to
-  if (frame == 120 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[10] ) ;
-  }//close if frame is equal to
-  if (frame == 130 ){
-    document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[11] ) ;
-  }//close if frame is equal to
+  if (frame%20==0){
+    document.getElementById("turtleDiv").innerHTML = colorTurtle() ;
+  }//close animate title if mod 10
+  //   if (frame == 10 ){
+  //   document.getElementById("turtleDiv").innerHTML = getTurtle() ;
+  // }//close if frame is equal to
+  // if (frame == 20 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[0] ) ;
+  // }//close if frame is equal to
+  // if (frame == 30 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[1] ) ;
+  // }//close if frame is equal to
+  // if (frame == 40 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[2] ) ;
+  // }//close if frame is equal to
+  // if (frame == 50 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[3] ) ;
+  // }//close if frame is equal to
+  // if (frame == 60 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[4] ) ;
+  // }//close if frame is equal to
+  // if (frame == 70 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[5] ) ;
+  // }//close if frame is equal to
+  // if (frame == 80 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[6] ) ;
+  // }//close if frame is equal to
+  // if (frame == 90 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[7] ) ;
+  // }//close if frame is equal to
+  // if (frame == 100 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[8] ) ;
+  // }//close if frame is equal to
+  // if (frame == 110 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[9] ) ;
+  // }//close if frame is equal to
+  // if (frame == 120 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[10] ) ;
+  // }//close if frame is equal to
+  // if (frame == 130 ){
+  //   document.getElementById("turtleDiv").innerHTML = getColoredTurtle( colors[11] ) ;
+  // }//close if frame is equal to
   //RESET
-  if (frame == 140){
+  if (frame == 256){
     frame = 0;
   }//close reset frame counter if 200
   

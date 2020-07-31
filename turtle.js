@@ -1,10 +1,33 @@
+//FILE FOR SVG TURTLE
+
+//VARIABLES
+var red = 0, green = 0, blue = 0;
+const paths = ['p1'];
+
+function updateTurtColors(){
+    red += 1;
+    blue += 1;
+    green +=16;
+    red %= 255;
+    blue %= 255;
+    green %=255;
+}//close function update colors
+
+function colorTurtle(){
+    updateTurtColors();
+    let color = 'fill=\'rgb(' + red + ',' + blue + ',' + green + ')\'';
+    console.log(color);
+    console.log(getTurtle().replace("fill=\"#000000\"", color));
+    return getTurtle().replace("fill=\"#000000\"", color); 
+}//close function color turtle
+
 function getTurtle(){ return turtle; }
 
 function getColoredTurtle(color){ 
     var colorTurtle = getTurtle();
     var newColor = "fill=\"" + color + "\"" ;
     return colorTurtle.replace("fill=\"#000000\"", newColor); 
-}
+}//close functiion get colored tutrtle
 
 const turtle = `
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"

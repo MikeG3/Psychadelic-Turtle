@@ -16,7 +16,6 @@ function updateColors(){
 function animateTitle(){
     for (let i = 0 ; i < letters.length ; i++ ){
         updateColors();
-        console.log( document.getElementById(letters[i]) );
         let color = 'rgb(' + red + ',' + blue + ',' + green + ')';
         document.getElementById(letters[i]).style.color = color;
     }//close for each letter
