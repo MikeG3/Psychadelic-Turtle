@@ -44,8 +44,10 @@ function startScreen(){
 
 function animate() {
   frame++;
-
-  if (frame == 10 ){
+  if (frame%9==0){
+    animateTitle();
+  }//close animate title if mod 10
+    if (frame == 10 ){
     document.getElementById("turtleDiv").innerHTML = getTurtle() ;
   }//close if frame is equal to
   if (frame == 20 ){
