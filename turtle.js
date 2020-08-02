@@ -16,8 +16,8 @@ function updateTurtColors(){
 function colorTurtle(){
     updateTurtColors();
     let color = 'fill=\'rgb(' + red + ',' + blue + ',' + green + ')\'';
-    console.log(color);
-    console.log(getTurtle().replace("fill=\"#000000\"", color));
+    // console.log(color);
+    // console.log(getTurtle().replace("fill=\"#000000\"", color));
     return getTurtle().replace("fill=\"#000000\"", color); 
 }//close function color turtle
 

@@ -18,6 +18,9 @@ function animate() {
   if (frame%20==0){
     document.getElementById("turtleDiv").innerHTML = colorTurtle() ;
   }//close animate title if mod 10
+  if (frame%40==0){
+    changeBackgroundColor();
+  }
   
   //RESET
   if (frame == 256){
